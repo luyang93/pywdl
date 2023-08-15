@@ -704,5 +704,20 @@ class StressTests(WdlTests):
         self.assertLessEqual(end, 2, f'Too long to run: ({end}s).')
 
 
+class Maintests(WdlTests):
+    """
+    """
+
+    def test_workflow_1(self):
+        wf, tasks = parse(FileStream('tests/wf_1.wdl', 'utf-8'))
+        print('--- workflow dictionary ---')
+        print(wf)
+
+        print('--- tasks dictionary ---')
+        print(tasks)
+
+        self.assertEqual(True, True)
+
+
 if __name__ == '__main__':
     unittest.main()
