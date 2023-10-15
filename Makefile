@@ -1,4 +1,4 @@
-ANTLR_VERSION = antlr-4.13.0-complete
+ANTLR_VERSION = antlr-4.13.1-complete
 GENERATED_PATH = pywdl/antlr
 FLAGS = -jar $(ANTLR_VERSION).jar -Dlanguage=Python3
 
